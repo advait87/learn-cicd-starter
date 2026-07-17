@@ -98,3 +98,7 @@ func main() {
 }
 
 // Just creating a PR for running ci
+func unused() {
+	// this function does nothing
+	// and is called nowhere
+}
