@@ -99,10 +99,10 @@ func main() {
 	port_str, err := strconv.Atoi(port)
 
 	if err != nil {
-		log.Printf("Invalid port", err)
+		log.Printf("Invalid port: %v", err)
 
 	}
-	log.Printf("Serving on port: %s\n", port_str)
+	log.Printf("Serving on port: %d\n", port_str)
 	log.Fatal(srv.ListenAndServe())
 }
 
